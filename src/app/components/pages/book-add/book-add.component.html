@@ -1,0 +1,48 @@
+<div class="row mt-3">
+  <div class="h1">Add New Book</div>
+</div>
+<div class="row mt-3">
+  <div class="col-md-12">
+    <div class="container">
+      <form [formGroup]="bookForm">
+        <div class="mb-3 row">
+          <label for="name" class="col-sm-3 col-form-label">Book_id</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" formControlName="book_id" placeholder="Book Id">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="price" class="col-sm-3 col-form-label">Name</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control"  formControlName="name" placeholder="Book Name">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="unitInStock" class="col-sm-3 col-form-label">Author</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control"  formControlName="author" placeholder="Book Name">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="unitInStock" class="col-sm-3 col-form-label">Publisher</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control"  formControlName="publisher" placeholder="Book Name">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="price" class="col-sm-3 col-form-label">Price</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control"  formControlName="price" placeholder="999.99">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <div class="offset-sm-3 col-sm-10">
+            <button type="submit" class="btn btn-primary" (click)="addBook()">
+              Save
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
